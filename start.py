@@ -23,7 +23,7 @@ async def on_ready():
         print(f"{len(synced)} commande(s) synchronisée(s)")
     except Exception as e:
         print(e)
-    activity = discord.Streaming(name="VS Code", url="https://twitch.tv/nathan260300")
+    activity = discord.Streaming(name="GitHub", url="https://twitch.tv/nathan260300")
     await bot.change_presence(status=discord.Status.dnd, activity=activity)
     print('Statut mis à jour')
 
