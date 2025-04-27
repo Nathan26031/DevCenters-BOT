@@ -24,7 +24,7 @@ async def on_ready():
     except Exception as e:
         print(e)
     activity = discord.Streaming(name="GitHub", url="https://twitch.tv/nathan260300")
-    await bot.change_presence(status=discord.Status.dnd, activity=activity)
+    await bot.change_presence(status=discord.Status.online, activity=activity)
     print('Statut mis à jour')
 
 keep_alive()
